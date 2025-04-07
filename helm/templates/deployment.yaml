@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: monogdb
+  name: mongodb
   namespace: roboshop
   labels: #these are deployment related labels
-    app: monogdb
+    app: mongodb
     project: roboshop
     tier: db
 spec: 
   replicas: 1
   selector: 
     matchLabels: #these labels are used to find the pods
-      app: monogdb
+      app: mongodb
       project: roboshop
       tier: db
   template:
     metadata: 
       labels:
-        app: monogdb
+        app: mongodb
         project: roboshop
         tier: db
     spec:
       containers:
-      - name: monogdb
+      - name: mongodb
         image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
         imagePullPolicy: Always
