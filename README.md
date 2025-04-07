@@ -20,7 +20,7 @@ docker build -t 637423540068.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongod
 ```
 * Push image
 ```
-docker push 637423540068.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongodb:v1.0.0
+docker push 637423540068.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongodb:v1.0.2
 ```
 * Now install using Helm. move to helm directory
 ```
