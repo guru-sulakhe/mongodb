@@ -10,6 +10,8 @@ kubectl create namespace roboshop
 ```
 * Login to ECR
 ```
+git clone https://github.com/guru-sulakhe/mongodb.git
+cd mongodb/
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 637423540068.dkr.ecr.us-east-1.amazonaws.com
 * Build MongoDB image.
 ```
