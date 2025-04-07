@@ -1,0 +1,3 @@
+deployment: 
+  imageURL: 637423540068.dkr.ecr.us-east-1.amazonaws.com/robohop/dev/mongodb
+  imageVersion: v1.0.2
