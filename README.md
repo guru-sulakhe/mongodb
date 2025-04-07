@@ -24,5 +24,6 @@ docker push 637423540068.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongodb:v1
 ```
 * Now install using Helm. move to helm directory
 ```
+cd helm/
 helm upgrade --install mongodb . -n roboshop
 ```
